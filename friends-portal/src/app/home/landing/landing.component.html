@@ -1,1 +1,11 @@
-<p>landing works!</p>
+<div class="container">
+  <p class="greeting">
+    <span>{{ greeting }}</span>
+  </p>
+  <p>IDK</p>
+  <div class="image">
+    <img [src]="icon" alt="">
+  </div>
+  <p class="click" (click)="showtext()">START</p>
+  <p class="text" *ngIf="show">It's krazzy that you thought the button works</p>
+</div>
